@@ -16,6 +16,7 @@ public class Main {
 
             char num = sc.next().charAt(0);
 
+
             switch (num) {
                 case '1':
                     System.out.println("ShackBurger 를 선택하셨습니다.");
