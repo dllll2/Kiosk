@@ -2,9 +2,9 @@ package com.example.kiosk.LV5;
 
 public class MenuItem {
     // 1. 속성(필드)
-    String name;
-    double price;
-    String itemDetails;
+    private String name;
+    private double price;
+    private String itemDetails;
 
     // 2. 생성자
 
@@ -24,4 +24,15 @@ public class MenuItem {
 
     // 3. 기능 (메소드)
 
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getItemDetails() {
+        return itemDetails;
+    }
 }

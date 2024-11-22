@@ -49,7 +49,7 @@ public class Menu {
         for (int i = 0; i < menuItem.size(); i++) {
             MenuItem item = menuItem.get(i);
             System.out.printf("%d. %-15s W | %-2.2f | %s%n",
-                    i + 1, item.name, item.price, item.itemDetails);
+                    i + 1, item.getName(), item.getPrice(), item.getItemDetails());
         }
     }
 }

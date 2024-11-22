@@ -66,8 +66,8 @@ public class Kiosk {
                 if (choice > 0 && choice <= menu.getMenuItem().size()) {
                     // 선택한 메뉴 출력
                     MenuItem selectedItem = menu.getMenuItem().get(choice - 1);
-                    System.out.println("선택한 메뉴: " + selectedItem.name + " | W " + selectedItem.price
-                            + " | " + selectedItem.itemDetails);
+                    System.out.println("선택한 메뉴: " + selectedItem.getName() + " | W " + selectedItem.getPrice()
+                            + " | " + selectedItem.getItemDetails());
                     System.out.println();
                     return;
                 } else if (choice == 0) {
