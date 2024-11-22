@@ -5,52 +5,82 @@ import java.util.Scanner;
 
 public class Kiosk {
     // 1. 속성(필드)
-    private List<MenuItem> menuItem;
+    private Menu menu;
 
     // 2. 생성자
 
-    public Kiosk(List<MenuItem> menuItem) {
-        this.menuItem = menuItem;
+    /**
+     * Kiosk 생성자
+     *
+     * @param menu
+     */
+    public Kiosk(Menu menu) {
+        this.menu = menu;
     }
-
 
     // 3.기능
     public void start() {
         Scanner sc = new Scanner(System.in);
 
-        do {
-            System.out.println("[ SHAKESHACK MENU]");
-            for (int i = 0; i < menuItem.size(); i++) {
-                System.out.printf("%d. %-15s W | %-2.2f | %s%n", i + 1, menuItem.get(i).name, menuItem.get(i).price, menuItem.get(i).itemDetails);
+        while (true) {
+            System.out.println("[ MAIN MENU ]");
+            System.out.println("1. Burgers");
+            System.out.println("2. Drinks");
+            System.out.println("3. Desserts");
+            System.out.println("0. 종료");
+
+            char num = sc.next().charAt(0);
+
+            switch (num) {
+                case '1':
+                    handleCategory("BURGERS");
+                    break;
+                case '2':
+                    System.out.println("아직 준비된 음료가 없습니다.");
+                    System.out.println("다시 선택해 주세요.");
+                    break;
+                case '3':
+                    System.out.println("아직 준비된 디저트가 없습니다.");
+                    System.out.println("다시 선택해 주세요.");
+                    break;
+                case '0':
+                    System.out.println("프로그램을 종료합니다.");
+                    return;
+                default:
+                    System.out.println("잘못된 선택입니다. 다시 시도해주세요");
             }
-            System.out.println("0. 종료      | 종료");
+        }
+    }
+
+    private void handleCategory(String category) {
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("[" + category + " MENU]");
+            menu.getMenuBoard(); // 메뉴 출력
+            System.out.println("0. 뒤로가기");
+
             char num = sc.next().charAt(0);
 
             try {
-                switch (num) {
-                    case '1':
-                        System.out.println("ShackBurger 를 선택하셨습니다.");
-                        break;
-                    case '2':
-                        System.out.println("SmokeShack 를 선택하셨습니다.");
-                        break;
-                    case '3':
-                        System.out.println("Cheeseburger 를 선택하셨습니다.");
-                        break;
-                    case '4':
-                        System.out.println("Hamburger 를 선택하셨습니다.");
-                        break;
-                    case '0':
-                        System.out.println("프로그램을 종료합니다.");
-                        return;
-                    default:
-                        System.out.println("잘못 선택하셨습니다.");
-                        break;
+                int choice = Character.getNumericValue(num);
+                if (choice > 0 && choice <= menu.getMenuItem().size()) {
+                    // 선택한 메뉴 출력
+                    MenuItem selectedItem = menu.getMenuItem().get(choice - 1);
+                    System.out.println("선택한 메뉴: " + selectedItem.name + " | W " + selectedItem.price
+                            + " | " + selectedItem.itemDetails);
+                    System.out.println();
+                    return;
+                } else if (choice == 0) {
+                    // 뒤로가기
+                    return;
+                } else {
+                    System.out.println("잘못된 선택입니다. 다시 시도해주세요.");
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("잘못된 입력입니다. 숫자를 입력해주세요!!!");
+            } catch (Exception e) {
+                System.out.println("잘못된 입력입니다. 숫자를 입력해주세요!");
             }
-        } while (!sc.nextLine().equals('0'));
+        }
     }
-
 }
+
