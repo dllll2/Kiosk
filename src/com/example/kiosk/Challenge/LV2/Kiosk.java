@@ -8,6 +8,7 @@ public class Kiosk {
     private MyCart cart; // 장바구니 관리
     private Discount discount; //할인
 
+
     // 2. 생성자
     public Kiosk(Menu menu) {
         this.menu = menu;
