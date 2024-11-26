@@ -6,6 +6,8 @@ public class Kiosk {
     // 1. 속성(필드)
     private Menu menu; // 메뉴 관리
     private MyCart cart; // 장바구니 관리
+    private Discount discount; //할인
+
 
     // 2. 생성자
     public Kiosk(Menu menu) {
@@ -123,13 +125,48 @@ public class Kiosk {
 
             switch (num) {
                 case '1':
-                    System.out.println("주문이 완료되었습니다. 금액은 W " + cart.getTotalPrice() + " 입니다.");
+                    Discount discount = selectDiscount(); // 할인 선택
+                    double totalPrice = cart.getTotalPrice();
+                    double discountedPrice = discount.applyDiscount(totalPrice);
+
+                    System.out.printf("주문이 완료되었습니다. 금액은 W%.2f 입니다.%n " , discountedPrice);
                     cart = new MyCart(); // 주문 완료 후 장바구니 초기화
                     return;
                 case '2':
                     return; // 메인 메뉴로 돌아가기
                 default:
                     System.out.println("잘못된 선택입니다. 다시 시도해주세요.");
+            }
+        }
+    }
+    private Discount selectDiscount(){
+        Scanner sc = new Scanner(System.in);
+
+        while (true){
+
+            System.out.println("할인 정보를 입력해주세요.");
+            System.out.println("1. 국가유공자 : 20% ");
+            System.out.println("2. 군인     :  10%");
+            System.out.println("3. 학생     :  5%");
+            System.out.println("4. 일반     :  0%");
+
+            char num = sc.next().charAt(0);
+
+            switch (num){
+                case '1':
+                    System.out.println("국가유공자 할인이 선택되었습니다.");
+                    return Discount.VETERAN;
+                case '2':
+                    System.out.println("군인 할인이 선택되었습니다.");
+                    return Discount.MILITARY;
+                case '3':
+                    System.out.println("학생 할인이 선택되었습니다.");
+                    return Discount.STUDENT;
+                case '4':
+                    System.out.println("일반이 선택되었습니다.");
+                    return Discount.NORMAL;
+                default:
+                    System.out.println("잘못된 입력입니다. 다시 선택해주세요.");
             }
         }
     }
