@@ -27,12 +27,14 @@ public class MyCart {
      */
     public void addCart(MenuItem item) {
         if (cartItems.containsKey(item)) {
-            System.out.println(item.getName() + "은(는) 이미 장바구니에 있습니다. 추가할 수 없습니다.");
+            int currentCount = cartItems.get(item);
+            cartItems.put(item, currentCount +1);
+            System.out.println(item.getName() + "이(가) 장바구니에 추가되었습니다.");
         } else {
             cartItems.put(item, 1); // 메뉴당 하나만 추가
-            totalCount++;
             System.out.println(item.getName() + "이(가) 장바구니에 추가되었습니다.");
         }
+        totalCount++;
     }
 
     /**
@@ -60,7 +62,7 @@ public class MyCart {
             System.out.println("[ Orders ]");
             for (Map.Entry<MenuItem, Integer> entry : cartItems.entrySet()) {
                 MenuItem item = entry.getKey();
-                System.out.printf("%-15s | 가격: W %.2f%n", item.getName(), item.getPrice());
+                System.out.printf("%-15s | 가격: W %.2f 수량: %d 개 %n", item.getName(), item.getPrice(),totalCount);
             }
         }
     }
