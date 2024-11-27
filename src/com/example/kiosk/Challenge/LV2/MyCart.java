@@ -37,20 +37,30 @@ public class MyCart {
         totalCount++;
     }
 
-    /**
-     * 장바구니 메뉴 제거 메서드
-     *
-     * @param item 제거할 메뉴
-     */
-    public void removeCart(MenuItem item) {
-        if (cartItems.containsKey(item)) {
-            cartItems.remove(item); // 메뉴 항목을 삭제
-            totalCount--;
-            System.out.println(item.getName() + "이(가) 장바구니에서 제거되었습니다.");
-        } else {
-            System.out.println("장바구니에 해당 메뉴가 없습니다.");
+
+    public void removeCart(int index) {
+        if(index < 0 || index >= cartItems.size()){
+            System.out.println("잘못된번호입니다. 다시 시도해주세요.");
+            return;
+        }
+        // index 에 해당하는 메뉴 가져오기
+        MenuItem targetItem = cartItems.keySet().stream()
+                .skip(index)
+                .findFirst()
+                .orElse(null);
+
+        if (targetItem != null){
+            int currentCount = cartItems.get(targetItem);
+            if (currentCount > 1){
+                cartItems.put(targetItem, currentCount - 1); //수량 감소
+            }else {
+                cartItems.remove(targetItem); // 마지막 한개남았을 경우에는 삭제
+            }
+            totalCount --;
+            System.out.println(targetItem.getName() + "이(가) 장바구니에서 삭제되었습니다.");
         }
     }
+
 
     /**
      * 장바구니 보여주는 메서드
@@ -60,9 +70,12 @@ public class MyCart {
             System.out.println("장바구니가 비어 있습니다.");
         } else {
             System.out.println("[ Orders ]");
+            int index = 1; // 번호 초기화
             for (Map.Entry<MenuItem, Integer> entry : cartItems.entrySet()) {
                 MenuItem item = entry.getKey();
-                System.out.printf("%-15s | 가격: W %.2f 수량: %d 개 %n", item.getName(), item.getPrice(),totalCount);
+                Integer count = entry.getValue();
+                System.out.printf("%d. %-15s | 가격: W %.2f | 수량: %d 개%n",
+                        index++, item.getName(), item.getPrice(), count);
             }
         }
     }
