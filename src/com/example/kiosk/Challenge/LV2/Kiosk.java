@@ -40,8 +40,21 @@ public class Kiosk {
                     } else {
                         System.out.println("장바구니가 비어 있어 주문 메뉴를 선택할 수 없습니다.");
                     }
-                    break;
+                    continue;
                 case '5':
+                    if (!cartIsEmpty()) {
+                        cart.viewCart(); // 장바구니 출력
+
+                        System.out.println("삭제할 메뉴의 번호를 입력해주세요:");
+                        int index = sc.nextInt(); // 번호 입력받기
+
+                        cart.removeCart(index - 1); // 1-based index를 0-based로 변환
+                    } else {
+                        System.out.println("장바구니가 비어 있어 메뉴를 삭제할 수 없습니다.");
+                    }
+                    break;
+
+                case '6':
                     if (!cartIsEmpty()) {
                         cancelOrder();
                     } else {
@@ -65,7 +78,8 @@ public class Kiosk {
         if (!cartIsEmpty()) {
             System.out.println("[ ORDER MENU ]");
             System.out.println("4. Orders       | 장바구니를 확인 후 주문합니다.");
-            System.out.println("5. Cancel       | 진행 중인 주문을 취소합니다.");
+            System.out.println("5. Remove       | 장바구니에서 메뉴를 삭제합니다.");
+            System.out.println("6. Cancel       | 진행 중인 주문을 취소합니다.");
         }
         System.out.println("0. 종료      | 종료");
     }
