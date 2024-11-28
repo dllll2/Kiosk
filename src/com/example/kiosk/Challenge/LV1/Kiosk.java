@@ -27,10 +27,10 @@ public class Kiosk {
                     handleCategory("BURGERS");
                     break;
                 case '2':
-                    System.out.println("아직 준비된 음료가 없습니다.");
+                    System.out.println("DRINKS");
                     break;
                 case '3':
-                    System.out.println("아직 준비된 디저트가 없습니다.");
+                    System.out.println("DESSERT");
                     break;
                 case '4':
                     if (!cartIsEmpty()) {

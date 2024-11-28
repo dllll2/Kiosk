@@ -20,11 +20,6 @@ public enum Discount {
 
     // 3. 기능
 
-    // 할인율 반환 메서드
-    public double getDiscountRate() {
-        return discountRate;
-    }
-
     // 할인 적용 금액 반환 메서드
     public double applyDiscount(double price){
         return price * (1 - discountRate);
