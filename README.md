@@ -3,7 +3,7 @@
 > <details>
 > <summary>Main.java</summary>
 >
-> ![LV1_App](https://github.com/user-attachments/assets/42e1bbb4-bd89-4f47-b38f-60fa1e2925a1)
+> ![main](https://github.com/user-attachments/assets/61e62876-68ae-43d2-9e01-0210b89c31c3)
 > </details>
 >
 > ## MenuItem.java
