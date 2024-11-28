@@ -85,4 +85,40 @@
 >>
 >>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
 >></details>
+>>
+>><details>
+>> <summary>Kiosk.java</summary>
+>>
+>>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>></details>
+>>
+>><details>
+>> <summary>Kiosk.java</summary>
+>>
+>>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>></details>
+>>
+>><details>
+>> <summary>Kiosk.java</summary>
+>>
+>>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>></details>
+>>
+>><details>
+>> <summary>Kiosk.java</summary>
+>>
+>>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>></details>
+>>
+>><details>
+>> <summary>Kiosk.java</summary>
+>>
+>>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>></details>
+>>
+>><details>
+>> <summary>Kiosk.java</summary>
+>>
+>>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>></details>
 
