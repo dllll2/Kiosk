@@ -62,7 +62,7 @@
 >><details>
 >> <summary>장바구니의 총 메뉴 개수를 반환</summary>
 >>
->![getTotalCount](https://github.com/user-attachments/assets/aa75fc9a-1469-4373-90f3-72a045b4b0eb)
+>>![getTotalCount](https://github.com/user-attachments/assets/aa75fc9a-1469-4373-90f3-72a045b4b0eb)
 >></details>
 >
 >
