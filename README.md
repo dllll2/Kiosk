@@ -34,7 +34,6 @@
 >>  </details>
 >
 > ## MyCart.java
->> ## **MyCart.java**<br>
 >><details>
 >> <summary>장바구니 메뉴 추가메서드</summary>
 >>
