@@ -152,6 +152,7 @@ public class Kiosk {
             }
         }
     }
+
     private Discount selectDiscount(){
         Scanner sc = new Scanner(System.in);
 

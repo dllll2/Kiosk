@@ -8,6 +8,7 @@ public enum Discount {
 
     private double discountRate;
 
+
     // 2.생성자
 
     /**

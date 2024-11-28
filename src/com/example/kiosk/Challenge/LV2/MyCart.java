@@ -43,6 +43,7 @@ public class MyCart {
             System.out.println("잘못된번호입니다. 다시 시도해주세요.");
             return;
         }
+
         // index 에 해당하는 메뉴 가져오기
         MenuItem targetItem = cartItems.keySet().stream()
                 .skip(index)
