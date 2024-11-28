@@ -74,7 +74,7 @@
 >
 > + ## **Discount.java**<br>
 >><details>
->> <summary></summary>
+>> <summary>Discount.java 전체코드</summary>
 >>
 >>![Discount](https://github.com/user-attachments/assets/e0c386d2-748a-4ffa-9e62-9fffc584ed56)
 >></details>
