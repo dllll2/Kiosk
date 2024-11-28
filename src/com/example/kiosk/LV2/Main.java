@@ -15,11 +15,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         do{
-//            System.out.println("[ SHAKESHACK MENU]");
-//
-//            for(int i = 0; i < menuItem.size(); i++){
-//                System.out.printf("%d. %-15s W | %-2.2f | %s%n", i + 1 , menuItem.get(i).name, menuItem.get(i).price, menuItem.get(i).itemDetails);
-//            }
+           System.out.println("[ SHAKESHACK MENU]");
+
+           for(int i = 0; i < menuItem.size(); i++){
+               System.out.printf("%d. %-15s W | %-2.2f | %s%n", i + 1 , menuItem.get(i).name, menuItem.get(i).price, menuItem.get(i).itemDetails);
+           }
             char num = sc.next().charAt(0);
 
             switch(num){
