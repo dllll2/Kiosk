@@ -7,9 +7,8 @@
 > </details>
 >
 > ## MenuItem.java
->>  + ## **MenuItem.java**<br>
 >>   <details>
->>   <summary>MenuItem.java</summary>
+>>   <summary>MenuItem.java 전체 코드</summary>
 >>
 >>   ![MenuItem](https://github.com/user-attachments/assets/6ecf9345-1ec7-4850-bb4d-8444df757803)
 >>  </details>
