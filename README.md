@@ -30,7 +30,7 @@
 >>  <details>
 >>  <summary>Menu.java 전체 코드</summary>
 >>
->>  ![MenuItem](https://github.com/user-attachments/assets/6ecf9345-1ec7-4850-bb4d-8444df757803)
+>>  ![Menu](https://github.com/user-attachments/assets/3bd083ad-f1d2-4342-96cf-7d7f4867dc2e)
 >>  </details>
 >
 > ## MyCart.java
