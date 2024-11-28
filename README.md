@@ -15,14 +15,14 @@
 >>  </details>
 >>  
 >
->> + ## **Menu.java**<br>
+> + ## **Menu.java**<br>
 >>  <details>
 >>  <summary>Menu.java</summary>
 >>
 >>  ![LV2_App](https://github.com/user-attachments/assets/7bca3e16-5888-44ed-ba00-3aa3674fc968)
 >>  </details>
 >
->> ## MyCart.java
+> ## MyCart.java
 >> + ## **MyCart.java**<br>
 >><details>
 >> <summary>Enum 클래스에 계산을 진행하는 calculate 추상 메소드를 구현</summary>
@@ -31,7 +31,7 @@
 >>![LV3_Override_example](https://github.com/user-attachments/assets/1075fed4-f4ab-48ed-9778-3b483ef22171)
 >></details>
 >
->> + ## **Discount.java**<br>
+> + ## **Discount.java**<br>
 >><details>
 >> <summary>람다, 스트림으로 입력받은 값보다 큰수를 출력하는 biggerValue() 메서드 구현</summary>
 >>
