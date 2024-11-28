@@ -9,7 +9,7 @@
 > ## MenuItem.java
 >>  + ## **MenuItem.java**<br>
 >>   <details>
->>   <summary>></summary>
+>>   <summary>MenuItem.java</summary>
 >>
 >>   ![MenuItem](https://github.com/user-attachments/assets/6ecf9345-1ec7-4850-bb4d-8444df757803)
 >>  </details>
