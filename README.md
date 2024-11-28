@@ -81,44 +81,44 @@
 >
 > + ## **Kiosk.java**<br>
 >><details>
->> <summary>Kiosk.java</summary>
+>> <summary>키오스크 시작 메서드</summary>
 >>
->>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>>![KioskStart](https://github.com/user-attachments/assets/19f1b59f-4664-4d16-a326-9443041493c9)
 >></details>
 >>
 >><details>
->> <summary>Kiosk.java</summary>
+>> <summary>키오스크 메인화면</summary>
 >>
->>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>>![printMainMenu](https://github.com/user-attachments/assets/e559ac01-0e52-4322-8f2d-58845263aa26)
 >></details>
 >>
 >><details>
->> <summary>Kiosk.java</summary>
+>> <summary>장바구니가 비어있는지 확인하는 메서드</summary>
 >>
->>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>>![cartIsEmpty](https://github.com/user-attachments/assets/ef6ca2be-b257-47f0-82be-1226ec8dfb84)
 >></details>
 >>
 >><details>
->> <summary>Kiosk.java</summary>
+>> <summary>카테고리별 화면 출력 메서드</summary>
 >>
->>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>>![handleCategory](https://github.com/user-attachments/assets/95bef2da-2b67-443f-8a7e-93616393d1d8)
 >></details>
 >>
 >><details>
->> <summary>Kiosk.java</summary>
+>> <summary>주문화면 메서드</summary>
 >>
->>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>>![handleOrders](https://github.com/user-attachments/assets/e241c65e-21c7-4fe7-ba03-68cc0b0bb71c)
 >></details>
 >>
 >><details>
->> <summary>Kiosk.java</summary>
+>> <summary>할인율 선택 메서드</summary>
 >>
->>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>>![selectDiscount](https://github.com/user-attachments/assets/5790fa31-ed63-473d-97be-cd2b8ec608d4)
 >></details>
 >>
 >><details>
->> <summary>Kiosk.java</summary>
+>> <summary>망바구니 초기화 메서드</summary>
 >>
->>![Kiosk](https://github.com/user-attachments/assets/989e5920-5652-4dbe-b6e6-6632e04dadf9)
+>>![cancleOrder](https://github.com/user-attachments/assets/f6d3e6d5-0f61-4aae-9500-fc3ddd6aaf2b)
 >></details>
 
