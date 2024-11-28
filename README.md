@@ -16,9 +16,15 @@
 >
 > + ## **Menu.java**<br>
 >>  <details>
->>  <summary>Menu.java</summary>
+>>  <summary>메뉴 리스트를 반환하는 메서드</summary>
 >>
->>  ![Menu](https://github.com/user-attachments/assets/3bd083ad-f1d2-4342-96cf-7d7f4867dc2e)
+>>  ![Menu getMenuItem](https://github.com/user-attachments/assets/612b1d64-9664-49a8-86a9-5360916666cc)
+>>  </details>
+>>
+>>  <details>
+>>  <summary>메뉴판을 출력하는 메서드</summary>
+>>
+>>  ![Menu getMenuBoard](https://github.com/user-attachments/assets/9c3b2de9-6cdc-45e8-88dd-63b747596ec7)
 >>  </details>
 >
 > ## MyCart.java
