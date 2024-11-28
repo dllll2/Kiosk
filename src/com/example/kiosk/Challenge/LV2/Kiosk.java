@@ -6,7 +6,6 @@ public class Kiosk {
     // 1. 속성(필드)
     private Menu menu; // 메뉴 관리
     private MyCart cart; // 장바구니 관리
-    private Discount discount; //할인
 
 
     // 2. 생성자
@@ -48,7 +47,7 @@ public class Kiosk {
                         System.out.println("삭제할 메뉴의 번호를 입력해주세요:");
                         int index = sc.nextInt(); // 번호 입력받기
 
-                        cart.removeCart(index - 1); // 1-based index를 0-based로 변환
+                        cart.removeCart(index - 1);
                     } else {
                         System.out.println("장바구니가 비어 있어 메뉴를 삭제할 수 없습니다.");
                     }
@@ -153,6 +152,7 @@ public class Kiosk {
             }
         }
     }
+
     private Discount selectDiscount(){
         Scanner sc = new Scanner(System.in);
 

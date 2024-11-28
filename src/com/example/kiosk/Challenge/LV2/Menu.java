@@ -24,15 +24,6 @@ public class Menu {
     // 3.기능
 
     /**
-     * 카테고리 이름 반환 메서드
-     *
-     * @return 카테고리 이름
-     */
-    public String getCategory() {
-        return category;
-    }
-
-    /**
      * 메뉴 리스트 반환 메서드
      *
      * @return 메뉴 리스트
@@ -40,6 +31,7 @@ public class Menu {
     public List<MenuItem> getMenuItem() {
         return menuItem;
     }
+
 
     /**
      * 메뉴판 출력 메서드

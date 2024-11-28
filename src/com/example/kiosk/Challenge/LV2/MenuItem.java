@@ -35,4 +35,5 @@ public class MenuItem {
     public String getItemDetails() {
         return itemDetails;
     }
+
 }
