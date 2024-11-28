@@ -37,7 +37,11 @@ public class MyCart {
         totalCount++;
     }
 
-
+    /**
+     * 장바구니 메뉴 삭제 메서드
+     * 
+     * @param index 삭제할 메뉴 번호
+     */
     public void removeCart(int index) {
         if(index < 0 || index >= cartItems.size()){
             System.out.println("잘못된번호입니다. 다시 시도해주세요.");
@@ -64,7 +68,7 @@ public class MyCart {
 
 
     /**
-     * 장바구니 보여주는 메서드
+     * 장바구니 출력 메서드
      */
     public void viewCart() {
         if (cartItems.isEmpty()) {
