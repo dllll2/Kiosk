@@ -26,6 +26,12 @@
 >>
 >>  ![Menu getMenuBoard](https://github.com/user-attachments/assets/9c3b2de9-6cdc-45e8-88dd-63b747596ec7)
 >>  </details>
+>>
+>>  <details>
+>>  <summary>Menu.java 전체 코드</summary>
+>>
+>>  ![MenuItem](https://github.com/user-attachments/assets/6ecf9345-1ec7-4850-bb4d-8444df757803)
+>>  </details>
 >
 > ## MyCart.java
 >> + ## **MyCart.java**<br>
