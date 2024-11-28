@@ -14,7 +14,7 @@
 >>  </details>
 >>  
 >
-> + ## **Menu.java**<br>
+> ## **Menu.java**<br>
 >>  <details>
 >>  <summary>메뉴 리스트를 반환하는 메서드</summary>
 >>
@@ -34,7 +34,7 @@
 >>  </details>
 >
 > ## MyCart.java
->> + ## **MyCart.java**<br>
+>> ## **MyCart.java**<br>
 >><details>
 >> <summary>장바구니 메뉴 추가메서드</summary>
 >>
@@ -72,14 +72,14 @@
 >></details>
 >
 >
-> + ## **Discount.java**<br>
+> ## **Discount.java**<br>
 >><details>
 >> <summary>Discount.java 전체코드</summary>
 >>
 >>![Discount](https://github.com/user-attachments/assets/e0c386d2-748a-4ffa-9e62-9fffc584ed56)
 >></details>
 >
-> + ## **Kiosk.java**<br>
+> ## **Kiosk.java**<br>
 >><details>
 >> <summary>키오스크 시작 메서드</summary>
 >>
