@@ -16,6 +16,9 @@ public class Kiosk {
 
     // 3. 기능
 
+    /**
+     * 키오스크 시작 메서드
+     */
     public void start() {
         Scanner sc = new Scanner(System.in);
 
@@ -69,6 +72,9 @@ public class Kiosk {
         }
     }
 
+    /**
+     * 키오스크 메인화면
+     */
     private void printMainMenu() {
         System.out.println("[ MAIN MENU ]");
         System.out.println("1. Burgers");
@@ -83,10 +89,18 @@ public class Kiosk {
         System.out.println("0. 종료      | 종료");
     }
 
+    /**
+     * 장바구니가 비어있는지 확인하는 메서드
+     * @return 비어있으면 true 아니면 false
+     */
     private boolean cartIsEmpty() {
         return cart.getTotalCount() == 0;
     }
 
+    /**
+     * 카테고리 별로 화면 출력 메서드
+     * @param category
+     */
     private void handleCategory(String category) {
         Scanner sc = new Scanner(System.in);
 
@@ -124,6 +138,9 @@ public class Kiosk {
         }
     }
 
+    /**
+     * 주문 관리 메서드
+     */
     private void handleOrders() {
         Scanner sc = new Scanner(System.in);
 
@@ -153,6 +170,11 @@ public class Kiosk {
         }
     }
 
+    /**
+     * 할인율 선택 메서드
+     *
+     * @return Discount
+     */
     private Discount selectDiscount(){
         Scanner sc = new Scanner(System.in);
 
@@ -185,6 +207,9 @@ public class Kiosk {
         }
     }
 
+    /**
+     * 장바구니 초기화 하는 메서드
+     */
     private void cancelOrder() {
         cart = new MyCart(); // 장바구니 초기화
         System.out.println("진행 중인 주문이 취소되었습니다.");
