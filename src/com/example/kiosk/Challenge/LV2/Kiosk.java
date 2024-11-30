@@ -13,7 +13,6 @@ public class Kiosk {
         this.menu = menu;
         this.cart = new MyCart();
     }
-
     // 3. 기능
 
     /**
