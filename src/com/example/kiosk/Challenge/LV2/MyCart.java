@@ -11,7 +11,6 @@ public class MyCart {
     private int totalCount; // 총 수량
 
     // 2. 생성자
-
     public MyCart() {
         this.cartItems = new HashMap<>();
         this.totalCount = 0;
