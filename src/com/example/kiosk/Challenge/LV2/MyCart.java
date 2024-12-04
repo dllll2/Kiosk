@@ -16,7 +16,6 @@ public class MyCart {
         this.totalCount = 0;
     }
 
-
     // 3.
     /**
      * 장바구니에 메뉴 추가 메서드
